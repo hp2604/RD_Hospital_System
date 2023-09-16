@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>valid</servlet-name>
+        <servlet-class>com.NHHospital.Management.valid</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>appointmentLetter</servlet-name>
+        <servlet-class>com.NHHospital.Management.appointmentLetter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>recordPatient</servlet-name>
+        <servlet-class>com.NHHospital.Management.recordPatient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>valid</servlet-name>
+        <url-pattern>/valid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>appointmentLetter</servlet-name>
+        <url-pattern>/appointmentLetter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>recordPatient</servlet-name>
+        <url-pattern>/recordPatient</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

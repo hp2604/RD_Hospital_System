@@ -5,10 +5,22 @@
         <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script> 
     
     </head>
     <body>
+        <nav >
+            <div class="nav-wrapper " >
+              <h5 class="brand-logo">Nk Hospital</h5>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="admit.html">Admit </a></li>
+                <li><a href="billing.html">Billing  </a></li>
+              </ul>
+            </div>
+          </nav>
+
+    <br>
        <div class="container">
             <div class="row">
                 
@@ -16,7 +28,7 @@
                     
                     <div class="card">
                         <div class="card-content">
-                            <h3> Nk Hospital</h3>
+                            <h3>Appointment</h3>
                             <div class="form">
                                 <form action="recordPatient" method="post">
                                     <div class="row">
@@ -27,7 +39,7 @@
                                     </div>
                                         <div class="input-field col s6">
                                              <h6>Family Member Name</h6>
-                                     <input placeholder="Enter the Familymember name"  type="text" class="validate" name="fname" required >
+                                     <input placeholder="Enter the Family member name"  type="text" class="validate" name="fname" required >
                                     
                                     </div>
                                     
@@ -81,6 +93,10 @@
                                      <input placeholder="enter the Previous record "  type="number" class="validate" name="recordNo"  >
                                   
                                     </div>
+                                    <div class="input-field col s6">
+                                        <h6>Date of Admit</h6>
+                                        <input   type="date" class="validate" name="date_of_admit" required >
+                                     </div>
                                      </div>
                                     
                                     <button  class="btn" >   Book</button>

@@ -1,13 +1,12 @@
 
-package com.NHHospital.Management;
-
+package com.NHHospital.connection;
 import java.sql.*;
 
 public class ConnectionProvider {
     private static Connection c;
     public static Connection  getConnection() 
     {
-       String url="jdbc:mysql://localhost:3306/record";
+       String url="jdbc:mysql://localhost:3306/Hospital";
        String username="root";
        String password="Harsh2604";
       try
@@ -27,3 +26,5 @@ public class ConnectionProvider {
      }
     
 }
+
+

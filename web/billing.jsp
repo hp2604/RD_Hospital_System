@@ -1,33 +1,23 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admit Patient </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head>
-<body>
-          <nav >
-            <div class="nav-wrapper " >
-              <h5 class="brand-logo">Nk Hospital</h5>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="appointment.html">Appointment</a></li>
-                <li><a href="admit.html">Admit </a></li>
-                <li><a href="billing.html">Billing  </a></li>
-              </ul>
-            </div>
-          </nav>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Billing </title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script> 
 
-    <br>
-    <div class="container">
+    </head>
+    <body>
+       <%@include file="navbar.jsp" %>
+      <div class="container">
         <div class="row">
          <div class="col s12">
             <div class="card">
                 <div class="card-content">
-                    <h3>Patient Details</h3>
+                    <h3>Billing Info</h3>
                     <div class="form">
-                        <form action="admitPatient" method="post">
+                        <form action="billing" method="post">
                             <div class="row">
                                 <div class="input-field col s6">
                                     <h6>Patient Name</h6>
@@ -45,21 +35,23 @@
                               
                                 </div>
                                     <div class="input-field col s6">
-                                         <h6>Gender</h6>
-                                         <input placeholder="Enter the Gender"  type="text" class="validate" name="gender" required>
+                                         <h6>Gender  </h6>
+                                         <input placeholder="Enter the gender "  type="text" class="validate" name="gender" required>
                                 
                                 </div>
                              </div>
-                            <div class="row">
+                             <div class="row">
                                 <div class="input-field col s6">
-                                    <h6>Contact</h6>
-                                    <input placeholder="Enter Contact Number"  type="text" class="validate" name="contact" required >
+                                     <h6>Contact</h6>
+                                 <input placeholder="Enter the Contact"  type="text" class="validate" name="contact" required>
+                              
                                 </div>
-                                <div class="input-field col s6">
-                                   <h6>Address</h6>
-                                   <input placeholder="Enter address"  type="text" class="validate" name="address" required >
+                                    <div class="input-field col s6">
+                                         <h6>Address </h6>
+                                         <input placeholder="Enter the Address "  type="text" class="validate" name="address" required>
+                                
                                 </div>
-                            </div>
+                             </div>
                             <div class="row">
                                 <div class="input-field col s6">
                                     <h6>Doctor Name</h6>
@@ -72,15 +64,15 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <h6>Appointment Number </h6>
-                                    <input placeholder="Enter Appointment Number"  type="number" class="validate" name="appointment_no" required >
+                                    <h6>Date of Admit </h6>
+                                    <input   type="date" class="validate" name="date_of_admit" required >
                                 </div>
                                 <div class="input-field col s6">
-                                   <h6>Date of Admit</h6>
-                                   <input   type="date" class="validate" name="date_of_admit" required >
+                                   <h6>Date of Discharge</h6>
+                                   <input   type="date" class="validate" name="date_of_discharge" required >
                                 </div>
                             </div>
-                            <button  class="btn" >Admit</button>
+                            <button  class="btn" >Proceed</button>
                         </form>
                     </div>
                 </div>
@@ -90,5 +82,6 @@
         </div>
                
     </div>
-</body>
+
+    </body>
 </html>

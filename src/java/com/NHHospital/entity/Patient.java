@@ -5,7 +5,15 @@ import java.sql.Date;
 public class Patient {
     private String patient_name,member_name,gender,contact,address,doctor_name,disease;
     private Date appointment_date,admit_date,discharge_date;
-    private int age;
+    private int age,appointment_number;
+
+    public int getAppointment_number() {
+        return appointment_number;
+    }
+
+    public void setAppointment_number(int appointment_number) {
+        this.appointment_number = appointment_number;
+    }
 
     public Patient() {
     }
